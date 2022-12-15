@@ -66,17 +66,19 @@
     body {
       margin: 0;
       display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-template-rows: min-content min-content;
+      grid-template-columns: 3fr calc(15vw - 8em) 3fr;
       grid-gap: 1em;
       gap: 1em;
       padding: 1em;
+      min-height: max(100vh,max-content);
+      align-items: center;
     }
 
     section {
       grid-column: 1;
       grid-row: 1 / 3;
-      padding: clamp(1em,3vw,4em);
+      padding: 1em 1.5em;
+      margin: clamp(1em,2vw,4em);
       line-height: 1.6;
     }
 
@@ -86,6 +88,8 @@
     }
 
     header {
+      grid-column: 3;
+      grid-row: 2;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -93,7 +97,7 @@
     }
 
     .filler {
-      grid-column: 2;
+      grid-column: 3;
       grid-row: 1;
       height: calc(100vh - 600px);
     }
@@ -125,6 +129,8 @@
 
     section {
       display:none;
+      background-color: #fe9042aa;
+      grid-row: 1 / 3;
     }
 
     #home {
@@ -146,10 +152,13 @@
 
       section {
         grid-row: 2;
+        grid-column: 1;
       }
 
       header {
         align-items: center;
+        grid-row: 1;
+        grid-column: 1;
       }
 
       header>h1 {
@@ -216,12 +225,13 @@
     Speakers
   </section>
   <section id="home">
+    <h2>The DART series</h2>
     <p>Based on the foundational works of Joseph Fels Ritt and Ellis Robert Kolchin, differential algebra has evolved into an
     extremely rich subject during the last two decades. <strong>Differential Algebra and Related Topics</strong> (DART) is a series of
     workshops which offer an opportunity for participants to present original research, to learn of research progress and
     new developments, and to exchange ideas and views on differential algebra and related topics. The eleventh addition of the
     DART series will be hosted in the School of Mathematical Sciences at Queen Mary University of London.</p>
-    <h3>Previous DART conferences</h3>
+    <h2>Previous DART conferences</h2>
     <ul>
       <li><a href="https://fsw01.bcc.cuny.edu/joel.nagloo/DART10.html" target="_blank" rel="noopener">DART X</a>, CUNY, New York City, USA</li>
       <li><a href="https://conferences.leeds.ac.uk/dart9/" target="_blank" rel="noopener">DART IX</a>, Leeds, United Kingdom,
