@@ -9,12 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html {
+      display: grid;
+      align-items: stretch;
       margin: 0;
       width: calc(100vw - (100vw - 100%));
       min-height: calc(100vh - (100vh - 100%));
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
       color: white;
-      background-color: black;
       background-image: url('kolchin-jmiller.jpg');
       background-position: center;
       background-attachment: fixed;
@@ -37,8 +38,7 @@
       grid-gap: 1em;
       gap: 1em;
       padding: 1em;
-      min-height: max(100vh,max-content);
-      align-items: center;
+      align-items: start;
     }
 
     section {
@@ -47,6 +47,8 @@
       padding: 1em 1.5em;
       margin: clamp(1em,2vw,4em);
       line-height: 1.6;
+      display: none;
+      background-color: #cf2e2e99;
     }
 
     header>h1 {
@@ -92,13 +94,6 @@
 
     nav>ul>li {
       display: inline-block;
-    }
-
-    section {
-      display:none;
-      background-color: #fe9042aa;
-      background-color: #cf2e2e99;
-      grid-row: 1 / 3;
     }
 
     #home {
