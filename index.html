@@ -47,7 +47,7 @@
       grid-column: 1;
       grid-row: 1 / 3;
       padding: 1em 1.5em;
-      margin: clamp(1em,2vw,4em);
+      margin: clamp(1em, 2vw, 4em);
       line-height: 1.6;
       display: none;
       background-color: #cf2e2e99;
@@ -106,7 +106,7 @@
       display: block;
     }
 
-    section:target ~ #home {
+    section:target~#home {
       display: none;
     }
 
@@ -144,16 +144,18 @@
         grid-template-columns: 1fr;
       }
     }
+
   </style>
 </head>
 
 <body>
   <div class="filler"></div>
-  <header>
-    <h1>Differential Algebra&nbsp;and Related Topics&nbsp;XI</h1>
-    <time datetime="2022-06-05/2022-06-09">5–9 June 2023</time>
-    <div class="contacts">
-      <div>School of Mathematical Sciences<br>Queen Mary University of London</div>
+  <header itemscope itemtype="https://schema.org/Event">
+    <h1 itemprop="name">Differential Algebra&nbsp;and Related Topics&nbsp;XI</h1>
+    <time itemprop="startDate" content="2023-06-05" datetime="2023-06-05">5</time>–<time itemprop="endDate"
+      content="2023-06-09" datetime="2023-06-09">9 June 2023</time>
+    <div itemprop="location" itemscope itemtype="http://schema.org/Place" class="contacts">
+      <div itemprop="name">School of Mathematical Sciences<br>Queen Mary University of London</div>
     </div>
     <nav>
       <ul>
@@ -165,51 +167,76 @@
   <section id="committees">
     <h2>Programme committee</h2>
     <ul>
-      <li><a href="https://perso.math.univ-toulouse.fr/hardouin/" target="_blank" rel="noopener" lang="fr">Charlotte Hardouin</a> (Toulouse)</li>
+      <li><a href="https://perso.math.univ-toulouse.fr/hardouin/" target="_blank" rel="noopener" lang="fr">Charlotte
+          Hardouin</a> (Toulouse)</li>
       <li><a href="http://www.kauers.de/" target="_blank" rel="noopener" lang="de">Manuel Kauers</a> (Linz)</li>
-      <li><a href="http://mmrc.iss.ac.cn/~weili/" target="_blank" rel="noopener">Wei Li <span lang="zh">(李伟)</span></a> (Chinese Academy of Sciences)</li>
-      <li><a href="https://www.scu.edu/cas/mathcs/faculty-and-staff/nicolette-meshkat/" target="_blank" rel="noopener">Nikki Meshkat</a> (Santa Clara University)</li>
-      <li><a href="https://qcpages.qc.cuny.edu/~aovchinnikov/" target="_blank" rel="noopener" lang="ru">Alexey Ovchinnikov</a> (City University of New York)</li>
+      <li><a href="http://mmrc.iss.ac.cn/~weili/" target="_blank" rel="noopener">Wei Li <span lang="zh">(李伟)</span></a>
+        (Chinese Academy of Sciences)</li>
+      <li><a href="https://www.scu.edu/cas/mathcs/faculty-and-staff/nicolette-meshkat/" target="_blank"
+          rel="noopener">Nikki Meshkat</a> (Santa Clara University)</li>
+      <li><a href="https://qcpages.qc.cuny.edu/~aovchinnikov/" target="_blank" rel="noopener" lang="ru">Alexey
+          Ovchinnikov</a> (City University of New York)</li>
       <li><a href="https://www3.nd.edu/~apillay/" target="_blank" rel="noopener">Anand Pillay</a> (Notre Dame)</li>
-      <li><a href="https://webspace.maths.qmul.ac.uk/i.tomasic/" target="_blank" rel="noopener" lang="hr">Ivan Toma&scaron;i&cacute;</a> (Queen Mary University of London)</li>
+      <li><a href="https://webspace.maths.qmul.ac.uk/i.tomasic/" target="_blank" rel="noopener" lang="hr">Ivan
+          Toma&scaron;i&cacute;</a> (Queen Mary University of London)</li>
     </ul>
     <h2>Organising committee</h2>
     <ul>
-      <li><a href="https://sites.google.com/view/sebastianeterovic/home" target="_blank" rel="noopener" lang="es">Sebastian Eterovi&cacute;</a> (University of Leeds)</li>
-      <li><a href="https://personalpages.manchester.ac.uk/staff/omar.sanchez/" target="_blank" rel="noopener" lang="es">Omar Léon Sánchez</a> (University of Manchester)</li>
-      <li><a href="https://eps.leeds.ac.uk/maths/staff/4058/dr-vincenzo-l-mantova" target="_blank" rel="noopener" lang="it">Vincenzo Mantova</a> (University of Leeds)</li>
-      <li><a href="https://qcpages.qc.cuny.edu/~aovchinnikov/" target="_blank" rel="noopener" lang="ru">Alexey Ovchinnikov</a> (City
+      <li><a href="https://sites.google.com/view/sebastianeterovic/home" target="_blank" rel="noopener"
+          lang="es">Sebastian Eterovi&cacute;</a> (University of Leeds)</li>
+      <li><a href="https://personalpages.manchester.ac.uk/staff/omar.sanchez/" target="_blank" rel="noopener"
+          lang="es">Omar Léon Sánchez</a> (University of Manchester)</li>
+      <li><a href="https://eps.leeds.ac.uk/maths/staff/4058/dr-vincenzo-l-mantova" target="_blank" rel="noopener"
+          lang="it">Vincenzo Mantova</a> (University of Leeds)</li>
+      <li><a href="https://qcpages.qc.cuny.edu/~aovchinnikov/" target="_blank" rel="noopener" lang="ru">Alexey
+          Ovchinnikov</a> (City
         University of New York)</li>
       <li><a href="https://www3.nd.edu/~apillay/" target="_blank" rel="noopener">Anand Pillay</a> (Notre Dame)</li>
-      <li><a href="https://math.berkeley.edu/~scanlon/" target="_blank" rel="noopener">Thomas Scanlon</a> (UC Berkeley)</li>
-      <li><a href="https://webspace.maths.qmul.ac.uk/i.tomasic/" target="_blank" rel="noopener" lang="hr">Ivan Toma&scaron;i&cacute;</a>
+      <li><a href="https://math.berkeley.edu/~scanlon/" target="_blank" rel="noopener">Thomas Scanlon</a> (UC Berkeley)
+      </li>
+      <li><a href="https://webspace.maths.qmul.ac.uk/i.tomasic/" target="_blank" rel="noopener" lang="hr">Ivan
+          Toma&scaron;i&cacute;</a>
         (Queen Mary University of London)</li>
-      <li><a href="https://sites.google.com/view/wibmer" target="_blank" rel="noopener" lang="de">Michael Wibmer</a> (Graz University of Technology)</li>
+      <li><a href="https://sites.google.com/view/wibmer" target="_blank" rel="noopener" lang="de">Michael Wibmer</a>
+        (Graz University of Technology)</li>
     </ul>
   </section>
   <section id="home">
     <h2>The DART series</h2>
-    <p>Based on the foundational works of Joseph Fels Ritt and Ellis Robert Kolchin, differential algebra has evolved into an
-    extremely rich subject during the last two decades. <strong>Differential Algebra and Related Topics</strong> (DART) is a series of
-    workshops which offer an opportunity for participants to present original research, to learn of research progress and
-    new developments, and to exchange ideas and views on differential algebra and related topics. The eleventh addition of the
-    DART series will be hosted in the School of Mathematical Sciences at Queen Mary University of London.</p>
-    <p>A related meeting: <a href="https://www.math.uni.wroc.pl/~dobrowol/conferences/2023/workshop.html" target="_blank" rel="noopener">Model theory and related topics</a>, 3–7 July 2023.</p>
+    <p>Based on the foundational works of Joseph Fels Ritt and Ellis Robert Kolchin, differential algebra has evolved
+      into an
+      extremely rich subject during the last two decades. <strong>Differential Algebra and Related Topics</strong>
+      (DART) is a series of
+      workshops which offer an opportunity for participants to present original research, to learn of research progress
+      and
+      new developments, and to exchange ideas and views on differential algebra and related topics. The eleventh
+      addition of the
+      DART series will be hosted in the School of Mathematical Sciences at Queen Mary University of London.</p>
+    <p>A related meeting: <a href="https://www.math.uni.wroc.pl/~dobrowol/conferences/2023/workshop.html"
+        target="_blank" rel="noopener">Model theory and related topics</a>, 3–7 July 2023.</p>
     <h2>Previous DART conferences</h2>
     <ul>
-      <li><a href="https://fsw01.bcc.cuny.edu/joel.nagloo/DART10.html" target="_blank" rel="noopener">DART X</a>, CUNY, New York City, USA, 2020</li>
-      <li><a href="https://conferences.leeds.ac.uk/dart9/" target="_blank" rel="noopener">DART IX</a>, Leeds, United Kingdom,
+      <li><a href="https://fsw01.bcc.cuny.edu/joel.nagloo/DART10.html" target="_blank" rel="noopener">DART X</a>, CUNY,
+        New York City, USA, 2020</li>
+      <li><a href="https://conferences.leeds.ac.uk/dart9/" target="_blank" rel="noopener">DART IX</a>, Leeds, United
+        Kingdom,
         2018</li>
-      <li><a href="http://www.algebra.uni-linz.ac.at/dart8/" target="_blank" rel="noopener">DART VIII</a>, Linz, Austria,
+      <li><a href="http://www.algebra.uni-linz.ac.at/dart8/" target="_blank" rel="noopener">DART VIII</a>, Linz,
+        Austria,
         2017</li>
-      <li><a href="https://fsw01.bcc.cuny.edu/joel.nagloo/DART7.html" target="_blank" rel="noopener">DART VII</a>, CUNY, New
+      <li><a href="https://fsw01.bcc.cuny.edu/joel.nagloo/DART7.html" target="_blank" rel="noopener">DART VII</a>, CUNY,
+        New
         York City, USA, 2016</li>
-      <li><a href="http://www.mmrc.iss.ac.cn/~dart6/" target="_blank" rel="noopener">DART VI</a>, Beijing, China, 2015</li>
-      <li><a href="https://www.cristal.univ-lille.fr/DARTV/pmwiki/pmwiki.html" target="_blank" rel="noopener">DART V</a>, Lille, France,
+      <li><a href="http://www.mmrc.iss.ac.cn/~dart6/" target="_blank" rel="noopener">DART VI</a>, Beijing, China, 2015
+      </li>
+      <li><a href="https://www.cristal.univ-lille.fr/DARTV/pmwiki/pmwiki.html" target="_blank" rel="noopener">DART
+          V</a>, Lille, France,
         2013</li>
-      <li><a href="http://www.mmrc.iss.ac.cn/~dart4/index.html" target="_blank" rel="noopener">DART IV</a>, Beijing, China,
+      <li><a href="http://www.mmrc.iss.ac.cn/~dart4/index.html" target="_blank" rel="noopener">DART IV</a>, Beijing,
+        China,
         2010</li>
-      <li><a href="http://andromeda.rutgers.edu/~liguo/DARTIII/diffalg.html" target="_blank" rel="noopener">DART III</a>,
+      <li><a href="http://andromeda.rutgers.edu/~liguo/DARTIII/diffalg.html" target="_blank" rel="noopener">DART
+          III</a>,
         Rutgers University, Newark, USA, 2008</li>
       <li><a href="http://andromeda.rutgers.edu/~liguo/DARTII/diffalg.html" target="_blank" rel="noopener">DART II</a>,
         Rutgers University, Newark, USA, 2007</li>
