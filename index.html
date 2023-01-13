@@ -158,6 +158,15 @@
     }
 
   </style>
+  <script>
+    preventScroll = function (event) {
+      var scrollTop = document.documentElement.scrollTop;
+      window.location.hash = event.target.hash;
+      document.documentElement.scrollTop = scrollTop;
+      event.preventDefault();
+    }
+  </script>
+
 </head>
 
 <body>
@@ -171,8 +180,8 @@
     </div>
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#committees">Committees</a></li>
+        <li><a href="" onclick="preventScroll(event)">Home</a></li>
+        <li><a href="#committees" onclick="preventScroll(event)">Committees</a></li>
       </ul>
     </nav>
   </header>
