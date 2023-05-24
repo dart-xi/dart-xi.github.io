@@ -38,6 +38,7 @@
       padding: clamp(1rem, 3vmin, 2rem);
       align-items: start;
       box-sizing: border-box;
+      height: fit-content;
     }
 
     .background {
@@ -72,6 +73,7 @@
     header>h1 {
       font-size: clamp(2em, 8vw, 4em);
       margin: 0;
+      margin-top: auto;
       line-height: 1.2;
     }
 
@@ -81,10 +83,13 @@
       flex-direction: column;
       gap: 30px;
       font-size: 1.125em;
-      align-self: flex-end;
+      align-self: flex-start;
       justify-self: right;
       max-width: 40rem;
+      height: calc(100vh - 4em);
       padding-bottom: 1em;
+      position: fixed;
+      top: 2em;
     }
 
     .contacts {
@@ -145,6 +150,13 @@
         justify-self: center;
         grid-column: 1;
         text-align: center;
+        position: initial;
+        top: initial;
+        height: initial;
+      }
+
+      header>h1 {
+        margin-top: 0;
       }
 
       .contacts {
