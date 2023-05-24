@@ -38,7 +38,6 @@
       padding: clamp(1rem, 3vmin, 2rem);
       align-items: start;
       box-sizing: border-box;
-      height: fit-content;
     }
 
     .background {
@@ -86,10 +85,10 @@
       align-self: flex-start;
       justify-self: right;
       max-width: 40rem;
-      height: calc(100vh - 4em);
+      height: calc(100vh - clamp(2rem,6vmin,4rem) - 1em);
       padding-bottom: 1em;
-      position: fixed;
-      top: 2em;
+      position: sticky;
+      top: clamp(1rem, 3vmin, 2rem);
     }
 
     .contacts {
@@ -131,7 +130,7 @@
     }
 
     #schedule {
-      width: 100%;
+      justify-self: stretch;;
     }
 
     #schedule ul {
