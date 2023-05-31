@@ -136,8 +136,8 @@
 
     #schedule ul {
       list-style: none;
-      padding-inline-start: 1.5em;
-      padding-inline-end: 1.5em;
+      padding-inline-start: 0;
+      padding-inline-end: 0;
     }
 
     #schedule details {
@@ -145,8 +145,22 @@
     }
 
     #schedule summary {
-      list-style-position: outside;
+      list-style: none;;
       cursor: pointer;
+    }
+
+    #schedule summary::after {
+      content: ' ◀';
+      content: ' (+)';
+    }
+
+    #schedule details[open] summary::after {
+      content: ' ▼';
+      content: ' (–)';
+    }
+
+    #schedule summary::-webkit-details-marker {
+      display: none;
     }
 
     #schedule time {
