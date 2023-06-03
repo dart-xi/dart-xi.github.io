@@ -65,6 +65,16 @@
       justify-self: left;
     }
 
+    @media (prefers-contrast: more) {
+      .background {
+        filter:brightness(50%);
+      }
+
+      section {
+        background-color: hsla(0, 64%, 25%, 0.6);
+      }
+    }
+
     ul {
       padding-inline-start: 40px;
       padding-inline-end: 40px;
