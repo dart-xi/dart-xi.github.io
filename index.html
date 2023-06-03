@@ -189,7 +189,7 @@
     }
 
     /* max-width: 4rem (padding) + 60rem (columns) + 3rem (gap) */
-    @media screen and (max-width: 67rem) {
+    @media print, screen and (max-width: 67rem) {
       html {
         align-items: start;
       }
@@ -226,10 +226,33 @@
       }
     }
 
-    @media screen and (max-width: 1500px) {
-      .contacts {
-        grid-template-columns: 1fr;
+    @media print {
+      html, section {
+        background-color: white;
+        color: black;
       }
+
+      header>h1 {
+        font-size: 3rem;
+      }
+
+      .background, header>nav, .registration, .postersubmission, summary::after {
+        display: none;
+      }
+
+      a, a:visited {
+        color: black;
+      }
+
+      a[href]::after {
+        content: "<" attr(href) ">";
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      a[href^="mailto:"]::after, a[href^="https://arxiv.org/abs"]::after {
+        display: none;
+      }
+
     }
 
   </style>
@@ -251,9 +274,9 @@
     <h1 itemprop="name">Differential Algebra&nbsp;and Related Topics&nbsp;XI</h1>
     <div><time itemprop="startDate" content="2023-06-05" datetime="2023-06-05">5</time>–<time itemprop="endDate"
         content="2023-06-09" datetime="2023-06-09">9 June 2023</time></div>
-    <div><a
+    <div class="registration"><a
       href="https://docs.google.com/forms/d/e/1FAIpQLSejMXRtOxl8rTzX6QlCyOoGe6lYOGBeQI4ttA7zOuKkMM68GA/viewform?usp=sf_link"><b>Register here</b></a> (Extended deadline&nbsp;15&nbsp;May&nbsp;2023)</div>
-    <div><a
+    <div class="postersubmission"><a
       href="https://easychair.org/my/conference?conf=dart2023"><b>Submit a poster here</b></a> (extended&nbsp;deadline&nbsp;1&nbsp;May&nbsp;2023)</div>
     <div itemprop="location" itemscope itemtype="http://schema.org/Place" class="contacts">
       <div itemprop="name">Maths Lecture&nbsp;Theatre<br>School of Mathematical&nbsp;Sciences<br>Queen Mary University&nbsp;of&nbsp;London</div>
