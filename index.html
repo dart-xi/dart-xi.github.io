@@ -94,7 +94,7 @@
 
     .contacts {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 1em;
       gap: 1em;
     }
@@ -150,12 +150,10 @@
     }
 
     #schedule summary::after {
-      content: ' ◀';
       content: ' (+)';
     }
 
     #schedule details[open] summary::after {
-      content: ' ▼';
       content: ' (–)';
     }
 
