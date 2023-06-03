@@ -150,11 +150,13 @@
     }
 
     #schedule summary::after {
-      content: ' (+)';
+      content: '(+)';
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 0.3em;
     }
 
     #schedule details[open] summary::after {
-      content: ' (–)';
+      content: '(–)';
     }
 
     #schedule summary::-webkit-details-marker {
