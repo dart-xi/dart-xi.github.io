@@ -191,6 +191,10 @@
       content: "–";
     }
 
+    a.slides::before {
+      content: "📃";
+    }
+
     @media screen and (max-width: 34rem),
       screen and (max-width: 80rem) and (min-width: 67em) {
       #schedule time+time {
@@ -383,13 +387,14 @@
       <li><details><summary><time>09:30</time><time>10:15</time> <b>Joldes:</b> On Moment Problems with Holonomic Functions</summary>
         <p>Many reconstruction algorithms from moments of algebraic data were developed in optimization, analysis or statistics. Lasserre and Putinar proposed an exact reconstruction algorithm for the algebraic support of the Lebesgue measure, or of measures with density equal to the exponential of a known polynomial. Their approach relies on linear recurrences for the moments, obtained using Stokes theorem. In this talk, we discuss an extension of this study to measures with holonomic densities and support with real algebraic boundary. Based on the framework of holonomic distributions and Stokes theorem, our approach computes recurrences for the moments which stay linear w.r.t the coefficients of the polynomial vanishing over the support boundary. This property allows for an efficient reconstruction method (from sufficiently many moments) for both these coefficients and those of the polynomials involved in the holonomic operators which annihilate the density, by solving linear systems only. This is a joint work with Florent Bréhard and Jean-Bernard Lasserre.</p>
       </details></li>
-      <li><details><summary><time>10:25</time><time>11:10</time> <b>Casale:</b> Algebraic Relations between Solutions of a Differential Equations</summary>
+      <li><details><summary><time>10:25</time><time>11:10</time> <b>Casale:</b> Algebraic Relations between Solutions of a Differential Equations <a class="slides" href="slides/Casale.pdf" title="slides"></a></summary>
         <p>In 2004, K. Nishioka proved that if \(y_1,\dots, y_n\) are solutions of \(P_1 : y''= 6 y^2 + x\) and \(\mathrm{tr.deg.}_{C(x)}C(x, y_1,y'_1,\dots, y_n,y'_n) < 2n\), then there exists \(i < j\) such that \(y_i = y_j\). This result was generalized to other Painlevé equation by Nagloo-Pillay.
         In this talk I will explain how the Galois groupoid of a differential equation can be used to study the algebraic relations between its solutions. Assume a second order equation has a primitive, simple, infinite dimensional Galois groupoid, if \(y_1,..., y_n\) are solutions and \(\mathrm{tr.deg.}_{C(x)}C(x,y_1, y'_1,\dots, y_n, y'_n) < 2n\) then</p>
         <ol>
           <li> there exist \(i\) such that \(\mathrm{tr.deg.}_{C(x)}(y_i,y'_i) < 2\), or </li>
           <li>there exist \(i < j\) such that \(C(x,y_i,y'_i)^{\mathrm{alg}} = C(x, y_j,y'_j)^{\mathrm{alg}}\).</li>
         </ol>
+        <p><a class="slides" href="slides/Casale.pdf" title="slides"> Slides</a></p>
       </details></li>
       <li><time>11:10</time><time>11:40</time> Coffee</li>
       <li><details><summary><time>11:40</time><time>12:25</time> <b>El Manssour</b></summary></details></li>
